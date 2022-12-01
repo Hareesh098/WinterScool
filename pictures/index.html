@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/WIS.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
+    </script>
+    <meta name="description" content="Winter School on Driven Amorphous Materials 2022">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="School">
+    <title>Pictures | Winter School on Driven Amorphous Materials 2022</title>
+</head>
+
+<body>
+
+     <div class="banner">
+        <img src="assets/lopatie.jpg" alt="Winter School on Driven Amorphous Materials" height="472" width="1000"">
+        <div class="top-left">
+            <span class="title1">Winter School on <br>  </span><span class="title2">Driven Amorphous Materials</span> <span class="year">2022</span>
+        </div>
+        <div class="bottom-right">
+            20 - 25 November, 2022 <br> Weizmann Institute of Science, Rehovot, Israel
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a title="School Home Page" href=".">Home</a>
+            </td>
+            <td class="navigation">
+               <a title="Participants" href="participants">Participants</a>
+            </td>
+
+            <td class="navigation">
+                <a title="Register for the School" href="registration">Registration</a>
+            </td>
+            <td class="navigation">
+                <a title="School Program" href="program">Program</a> 
+            </td>
+            <td class="navigation">
+                <a class="current" title="School Pictures" href="pictures">Pictures</a>
+            </td>
+            <td class="navigation">
+                <a title="Directions to the School Venue" href="directions">Directions</a>
+            </td>
+            <td class="navigation">
+                <a title="School Flyer" href="flyer">Flyer</a>
+            </td>
+        </tr>
+    </table>
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/8.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/9.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/10.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/11.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/12.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/13.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/14.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/15.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/16.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/17.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/18.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/19.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/20.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/pictures/21.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <footer>
+        Webpage designed by <a href="https://scholar.google.co.in/citations?user=PIs8-H4AAAAJ&hl=en">Harish Charan</a>
+    </footer>
+
+</body>
+</html>
+
