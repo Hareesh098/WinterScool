@@ -91,7 +91,7 @@ th,td{
 
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:1000px;}
-td.navigation{font-size:1.5em; white-space:nowrap; width:15%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.navigation{font-size:1.6em; white-space:nowrap; width:15%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* Sponsor Images */
 table.sponsors{width:1000px;}
@@ -124,6 +124,13 @@ img.center{display:block; width:67%; margin:1em auto 2em auto;}
 table.flyers{width:800px;}
 td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 td.sponsor img{width:100%}
+
+
+/* Talks Images */
+table.talks{width:800px;}
+td.talks{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width:100%}
+
 
 /*Footer*/
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
